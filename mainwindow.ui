@@ -6,20 +6,82 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>392</width>
-    <height>279</height>
+    <width>469</width>
+    <height>343</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="notice_label">
+   <widget class="QPushButton" name="btn_joinVideo">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>370</x>
+      <y>230</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>拼接视频</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_splitVideo">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
       <y>20</y>
-      <width>351</width>
+      <width>75</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>分析JSON</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>331</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_downVideo">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>90</y>
+      <width>75</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>下载视频</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_downAll">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>160</y>
+      <width>75</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>全部下载</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>451</width>
       <height>31</height>
      </rect>
     </property>
@@ -27,101 +89,53 @@
      <string>TextLabel</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="down_btn">
+   <widget class="QTextEdit" name="textE_width">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>80</y>
-      <width>75</width>
-      <height>23</height>
+      <x>40</x>
+      <y>230</y>
+      <width>121</width>
+      <height>31</height>
      </rect>
-    </property>
-    <property name="text">
-     <string>开始下载</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="merge_btn">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>130</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>合成视频</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="w_txt">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>80</y>
-      <width>91</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>61</width>
+      <x>10</x>
+      <y>240</y>
+      <width>31</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>视频宽度:</string>
+     <string>宽：</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>130</y>
-      <width>61</width>
+      <x>190</x>
+      <y>240</y>
+      <width>31</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>视频高度:</string>
+     <string>高：</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="h_txt">
+   <widget class="QTextEdit" name="textE_height">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>130</y>
-      <width>91</width>
-      <height>20</height>
+      <x>220</x>
+      <y>230</y>
+      <width>121</width>
+      <height>31</height>
      </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="log_label">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>160</y>
-      <width>351</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
   </widget>
@@ -130,12 +144,11 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>392</width>
+     <width>469</width>
      <height>23</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
